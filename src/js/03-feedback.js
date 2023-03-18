@@ -39,3 +39,5 @@ function textForm() {
     textareaEL.value = message || '';
   }
 }
+
+textForm();
