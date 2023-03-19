@@ -14,4 +14,10 @@ player.on(
   }, 1000)
 );
 
-player.setCurrentTime(localStorage.getItem(STORAGE_KEY_TIME));
+function setStorageTime() {
+  const getKeyStorage = localStorage.getItem(STORAGE_KEY_TIME);
+  if (getKeyStorage) {
+    player.setCurrentTime(getKeyStorage);
+  }
+}
+setStorageTime();

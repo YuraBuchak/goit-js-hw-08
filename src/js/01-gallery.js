@@ -27,14 +27,6 @@ galleryEl.insertAdjacentHTML('afterbegin', markup);
 
 // 2. modal
 
-galleryEl.addEventListener('click', event => {
-  event.preventDefault();
-
-  if (event.target.nodeName !== 'IMG') {
-    return;
-  }
-});
-
 new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
